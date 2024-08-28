@@ -57,4 +57,3 @@ sources:
           - unique:
               column_name: "(date_date || '_' || campaign_key)"
 
-
