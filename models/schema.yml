@@ -34,9 +34,25 @@ sources:
               - not_null
       - name: adwords
         identifier: raw_gz_adwords
+        description: campain coming from adwords
+        tests:
+          - unique:
+              column_name: "(date_date || '_' || campaign_key)"
       - name: bing
         identifier: raw_gz_bing
+        description: campain coming from bing
+        tests:
+          - unique:
+              column_name: "(date_date || '_' || campaign_key)"
       - name: criteo
         identifier: raw_gz_criteo
+        description: campain coming from criteo
+        tests:
+          - unique:
+              column_name: "(date_date || '_' || campaign_key)"
       - name: facebook
         identifier: raw_gz_facebook
+        description: campain coming from facebook
+        tests:
+          - unique:
+              column_name: "(date_date || '_' || campaign_key)"
